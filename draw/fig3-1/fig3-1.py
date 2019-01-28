@@ -6,13 +6,13 @@ def stepFunction(x):
     return y.astype(np.int)
 
 if __name__=='__main__':
-    plt.xlim((-2,2))
-    plt.ylim((-2,2))
+    plt.xlim((-1.3,1.3))
+    plt.ylim((-1.3,1.3))
 
     plt.xlabel('x')
-    plt.ylabel('y')
+    plt.ylabel('h_perceptron')
 
-    x = np.arange(-2,2,0.001)
+    x = np.arange(-2,2,0.0001)
     y = stepFunction(x)
     
     plt.plot(x,y)
